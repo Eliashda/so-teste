@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBeats - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="perfil">
+                <i class="ri-user-fill"></i>
+                <span>Perfil</span>
+            </div>
+            <div class="center-icon">
+                <nav class="nav">   
+                    <img id="menu-button" class="menu-button" src="Images/logo.jpg" width="50px" alt="Icone-menu">
+                    <ul id="menu" class="menu">
+                        <li><a href="../barrão/index.html"><span><img src="Images/playlist.png" width="40px" alt="Playlist-icon"></span></a></li>
+                        <li><a href="index.html"><span><img src="Images/home.jpg" width="40px" alt="Home-icon"></span></a></li>
+                        <li><a href="#"><span><img src="Images/historico.jpg" width="40px" alt="History-icon"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="settings-icon">
+                <i class="ri-settings-5-fill"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisa">
+        </div>
+
+        <section class="recommendations">
+            <h2>Recomendações</h2>
+            <div class="genres">
+                <div class="genre">Sertanejo</div>
+                <div class="genre">Pop Music</div>
+                <div class="genre">Pagode</div>
+                <div class="genre">Jazz</div>
+                <div class="genre">Country</div>
+            </div>
+        </section>
+
+        <section class="popular-artists">
+            <h2>Artistas Populares</h2>
+            <div class="artists">
+                <div class="artist"><img src="Images/50cent.jpg" alt="Artista 1"></div>
+                <div class="artist"><img src="Images/frank.jpg" alt="Artista 2"></div>
+                <div class="artist"><img src="Images/laufey.jpg" alt="Artista 3"></div>
+                <div class="artist"><img src="Images/charles.png" alt="Artista 4"></div>
+                <div class="artist"><img src="Images/tupac.jpg" alt="Artista 5"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

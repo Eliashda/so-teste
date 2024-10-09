@@ -1,0 +1,98 @@
+
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url(purple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar estilizada */
+.navbar {
+    background-color: #3c06a7;
+    color: #282828;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer fixado no fundo */
+.footer {
+    background-color: #3c06a7;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    width: 300px; 
+    height: auto; 
+    background-color: #4900d9ba; 
+    box-shadow: 0 0 10px rgb(91 6 55); 
+    padding: 3rem; 
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.container button {
+    background-color: #000000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 110px;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #8d0bd8;
+    width: 115px;
+    height: 35px;
+}
+
+/* Estilização dos campos de input */
+.container input {
+    border: none;
+    background-color: whitesmoke;
+    height: 30px;
+    width: 180px;
+    border-radius: 20px;
+    margin: 0.5rem;
+    padding: 0 10px;
+}
+
+.container input:hover {
+    opacity: 0.9;
+}
+
+#certo {
+    color: rgb(93, 6, 233);
+    font-family: sans-serif;
+}
+
+#erro {
+    color: red;
+    font-family: sans-serif;
+}
+.sobre{
+    padding-top: 10vh;
+}

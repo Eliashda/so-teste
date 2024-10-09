@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px;
+}
+
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    background-image: url(Images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #3c067a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.perfil, .settings-icon {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.perfil i, .settings-icon i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.center-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.menu-button {
+    width: 75px;
+    height: 75px;
+    background-color: #655be1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #5146e1;
+}
+
+.menu {
+    position: absolute;
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    list-style: none;
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.menu.active {
+    opacity: 1;
+    pointer-events: auto; /* Allow interaction when visible */
+}
+
+.menu li {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.menu.active li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.search-bar {
+    padding-top: 50px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.recommendations, .popular-artists {
+    margin: 20px;
+}
+
+.recommendations h2, .popular-artists h2 {
+    margin-bottom: 10px;
+}
+
+.genres, .artists {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.genre {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    color: white;
+}
+
+.artist {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
